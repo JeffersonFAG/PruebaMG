@@ -20,13 +20,13 @@ import "./App.css";
 const useStyles = makeStyles((theme) => ({
   modal: {
     width: 300,
-    border: ".5px solid #61dafb",
+    border: "2px solid #000",
     position: "absolute",
     margin: "10% auto",
     backgroundColor: theme.palette.background.paper,
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
-    top: "30%",
+    top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
   },
@@ -234,7 +234,8 @@ function App() {
   const bodyModaDelete = (
     <div className={styles.modal}>
       <h3>
-        DESEA ELIMINAR A <b>{seleccion && seleccion.name}</b>?
+        SEGURO QUE DESEA ELIMINAR ESTE REGISTRO
+        <b>{seleccion && seleccion.name}</b>?
       </h3>
       <br />
       <div align="rigth">
@@ -264,8 +265,8 @@ function App() {
 
   return (
     <div className="App">
+      <br />
       <Button onClick={() => handleModalInsert()}>Insertar</Button>
-
       <TableContainer>
         <Table>
           <TableHead>
