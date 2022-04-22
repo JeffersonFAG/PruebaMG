@@ -265,6 +265,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>ULTIMA ACTUALIZACION</h1>
       <br />
       <Button onClick={() => handleModalInsert()}>Insertar</Button>
       <TableContainer>
