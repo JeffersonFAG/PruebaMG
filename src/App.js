@@ -266,6 +266,7 @@ function App() {
   return (
     <div className="App">
       <br />
+      <h1>NUEVO TITULO en rama para actualizacIon en modo prueba git</h1>
       <Button onClick={() => handleModalInsert()}>Insertar</Button>
       <TableContainer>
         <Table>
